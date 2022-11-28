@@ -1,0 +1,116 @@
+.container {
+  height: 100vh;
+  padding: 0 40px;
+  background-color: rgb(214, 212, 206);
+  position: relative;
+  overflow: hidden;
+
+  main {
+    position: absolute;
+    top: 10%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    .product {
+      width: 50%;
+      height: 70%;
+      background: rgb(194, 192, 189);
+      box-shadow: 0 1px 5px 2px rgba(151, 147, 137, 0.5);
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+
+      .productImage {
+        width: 260px;
+        height: 260px;
+        padding: 5px;
+        // border-radius: 10px;
+        box-shadow: 0 1px 5px 2px rgba(151, 147, 137, 0.5);
+        Image {
+          border-radius: 10px;
+        }
+      }
+
+      .productDetail {
+        width: 50%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        .price {
+          font-size: larger;
+          font-weight: 600;
+          font-family: monospace;
+        }
+
+        p {
+          font-weight: 500;
+        }
+        .qty {
+          font-weight: 600;
+
+          span {
+            font-size: x-large;
+            font-weight: 500;
+            font-family: monospace;
+          }
+          .qtyBtn {
+            border: none;
+            background: none;
+            font-size: large;
+
+            &:hover {
+              background-image: linear-gradient(
+                to right,
+                rgb(204, 130, 69),
+                gray
+              );
+              background-clip: text;
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+            }
+          }
+        }
+
+        .cartBtn {
+          padding: 10px;
+          color: rgb(99, 98, 98);
+          border: none;
+          background: rgb(214, 212, 206);
+          box-shadow: 0 1px 5px 2px rgba(151, 147, 137, 0.5);
+
+          &:hover {
+            color: #fff;
+            background-image: linear-gradient(
+              to right,
+              rgb(204, 130, 69),
+              gray
+            );
+          }
+        }
+        .selectedCartBtn {
+          padding: 10px;
+          box-shadow: 0 1px 5px 2px rgba(151, 147, 137, 0.5);
+          border: none;
+          color: #fff;
+          background-image: linear-gradient(to right, rgb(204, 130, 69), gray);
+        }
+      }
+    }
+
+    .detailpageBgImg {
+      width: 50%;
+      height: 84vh;
+      background: url("/images/online\ delivery-contacts.gif");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+}
+
+@media screen and (max-width: 780px) {
+}

@@ -1,0 +1,42 @@
+.container {
+  position: relative;
+  min-height: 150vh;
+  background-color: rgb(214, 212, 206);
+
+  main {
+    position: absolute;
+    top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 40px 0;
+
+    .cards {
+      margin: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 60px;
+      align-items: center;
+    }
+    button {
+      border: 1px solid grey;
+      padding: 7px;
+
+      &:hover {
+        background-image: linear-gradient(to right, rgb(204, 130, 69), gray);
+
+        color: #fff;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .container {
+    min-height: 300vh;
+
+    main {
+      top: 5%;
+    }
+  }
+}

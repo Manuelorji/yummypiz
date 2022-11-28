@@ -1,0 +1,69 @@
+.nav {
+  top: 0;
+  left: 0px;
+  right: 0px;
+  z-index: 1000;
+  user-select: none;
+  position: relative;
+
+  margin: 10px;
+  background: transparent;
+  border-radius: 10px;
+  padding: 20px 30px;
+  font-size: large;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 1px 5px 2px rgba(151, 147, 137, 0.5);
+
+  .logo {
+    font-weight: 600;
+  }
+  .navLinks {
+    display: flex;
+    gap: 100px;
+    cursor: pointer;
+
+    .navLink {
+      // font-weight: 600;
+
+      transition: all 0.1s ease-in-out;
+
+      &:hover {
+        background-image: linear-gradient(to right, rgb(204, 130, 69), gray);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+
+  .cartNumber {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    font-size: x-small;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+    background-image: linear-gradient(to right, rgb(204, 130, 69), gray);
+    color: #fff;
+  }
+
+  .active {
+    background-image: linear-gradient(to right, rgb(204, 130, 69), gray);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .nav {
+    .navLinks {
+      gap: 40px;
+    }
+  }
+}
