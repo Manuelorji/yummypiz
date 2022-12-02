@@ -29,49 +29,51 @@ const DetailPage = ({ item }) => {
     <div className={styles.container}>
       <Nav />
       <main>
-        <div className={styles.product}>
-          <div className={styles.productImage}>
-            <Image src={item.src} alt="" width={250} height={250} />
-          </div>
+        <div className={styles.productContainer}>
+          <div className={styles.product}>
+            <div className={styles.productImage}>
+              <Image src={item.src} alt="" layout="fill" />
+            </div>
 
-          <div className={styles.productDetail}>
-            <h3>{item.title}</h3>
-            <span className={styles.price}>${item.price}</span>
-            <p>{item.description}</p>
-            {!isAdded && (
-              <div className={styles.qty}>
-                Quantity:
-                <button
-                  onClick={() => decreaseCount()}
-                  className={styles.qtyBtn}
-                >
-                  -
-                </button>
-                <span>{qty < 10 ? `0${qty}` : qty}</span>
-                <button
-                  onClick={() => increaseCount()}
-                  className={styles.qtyBtn}
-                >
-                  +
-                </button>
-              </div>
-            )}
+            <div className={styles.productDetail}>
+              <h3>{item.title}</h3>
+              <span className={styles.price}>${item.price}</span>
+              <p>{item.description}</p>
+              {!isAdded && (
+                <div className={styles.qty}>
+                  Quantity:
+                  <button
+                    onClick={() => decreaseCount()}
+                    className={styles.qtyBtn}
+                  >
+                    -
+                  </button>
+                  <span>{qty < 10 ? `0${qty}` : qty}</span>
+                  <button
+                    onClick={() => increaseCount()}
+                    className={styles.qtyBtn}
+                  >
+                    +
+                  </button>
+                </div>
+              )}
 
-            {!isAdded ? (
-              <button
-                onClick={() => addItemToCart(item, qty)}
-                className={styles.cartBtn}
-              >
-                Add to cart
-              </button>
-            ) : (
-              <button
-                onClick={() => removeItemFromCart(item.id)}
-                className={styles.selectedCartBtn}
-              >
-                Remove from cart
-              </button>
-            )}
+              {!isAdded ? (
+                <button
+                  onClick={() => addItemToCart(item, qty)}
+                  className={styles.cartBtn}
+                >
+                  Add to cart
+                </button>
+              ) : (
+                <button
+                  onClick={() => removeItemFromCart(item.id)}
+                  className={styles.selectedCartBtn}
+                >
+                  Remove from cart
+                </button>
+              )}
+            </div>
           </div>
         </div>
         <div className={styles.detailpageBgImg}></div>

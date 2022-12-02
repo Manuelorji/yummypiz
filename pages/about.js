@@ -69,7 +69,7 @@ const About = () => {
           We also proudly serve icy cold Coca-Cola® products.
         </p>
       </main>
-      <Footer />
+      <Footer position="static" />
     </div>
   );
 };

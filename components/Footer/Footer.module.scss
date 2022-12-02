@@ -1,5 +1,4 @@
 .footer {
-  // position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
@@ -13,4 +12,18 @@
   display: flex;
   justify-content: space-between;
   box-shadow: 0 1px 5px 2px rgba(151, 147, 137, 0.5);
+}
+
+@media screen and (min-width: 567px) and (max-width: 780px) {
+  .footer {
+    font-size: normal;
+    padding: 15px 25px;
+  }
+}
+
+@media screen and (min-width: 350px) and (max-width: 568px) {
+  .footer {
+    padding: 15px 25px;
+    font-size: small;
+  }
 }

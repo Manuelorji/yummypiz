@@ -27,3 +27,15 @@
     -webkit-text-fill-color: transparent;
   }
 }
+
+@media screen and (min-width: 567px) and (max-width: 780px) {
+  .container {
+    font-size: normal;
+  }
+}
+
+@media screen and (min-width: 372px) and (max-width: 568px) {
+  .container {
+    font-size: small;
+  }
+}

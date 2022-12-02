@@ -37,6 +37,10 @@
       }
     }
   }
+  .cartIcon {
+    width: 20px;
+    height: 20px;
+  }
 
   .cartNumber {
     position: absolute;
@@ -60,10 +64,46 @@
   }
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (min-width: 567px) and (max-width: 818px) {
   .nav {
+    font-size: normal;
+    padding: 15px 25px;
+
     .navLinks {
       gap: 40px;
+    }
+    .cartIcon {
+      width: 20px;
+      height: 20px;
+    }
+    .cartNumber {
+      top: 25px;
+      right: 25px;
+    }
+  }
+}
+
+@media screen and (min-width: 350px) and (max-width: 568px) {
+  .nav {
+    padding: 15px;
+    font-size: small;
+
+    .navLinks {
+      gap: 16px;
+    }
+
+    .cartIcon {
+      width: 15px;
+      height: 15px;
+    }
+
+    .cartNumber {
+      position: absolute;
+      top: 23px;
+      right: 15px;
+      width: 8px;
+      height: 8px;
+      font-size: xx-small;
     }
   }
 }

@@ -19,7 +19,7 @@ const Contacts = ({ position = "relative" }) => {
         <div className={styles.contactsBg}></div>
         <div className={styles.contacts}>
           <div className={styles.contactsList}>
-            <h4>Hot Lines:</h4>
+            <h2>Hot Lines:</h2>
             <div>
               Contact us through any of the numbers below to have us deliver
               YummyPiz's products on your door step.
@@ -54,7 +54,7 @@ const Contacts = ({ position = "relative" }) => {
           </div>
         </div>
       </main>
-      <Footer styles={{ position: position }} />
+      <Footer position="static" />
     </div>
   );
 };

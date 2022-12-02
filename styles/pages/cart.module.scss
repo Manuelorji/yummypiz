@@ -95,3 +95,40 @@
     }
   }
 }
+
+@media screen and (min-width: 786px) and (max-width: 1344px) {
+  .container {
+    .list {
+      width: 80%;
+    }
+
+    .total {
+      left: 10%;
+      right: 10%;
+    }
+  }
+}
+
+@media screen and (min-width: 567px) and (max-width: 785px) {
+  .container {
+    .list {
+      width: 90%;
+    }
+    .total {
+      left: 5%;
+      right: 5%;
+    }
+  }
+}
+
+@media screen and (min-width: 350px) and (max-width: 568px) {
+  .container {
+    .list {
+      width: 95%;
+    }
+    .total {
+      left: 2.5%;
+      right: 2.5%;
+    }
+  }
+}
