@@ -113,6 +113,11 @@
   .container {
     .list {
       width: 90%;
+      padding: 10px;
+
+      .item {
+        padding: 10px 5px;
+      }
     }
     .total {
       left: 5%;
@@ -125,10 +130,22 @@
   .container {
     .list {
       width: 95%;
-    }
-    .total {
-      left: 2.5%;
-      right: 2.5%;
+      padding: 10px;
+
+      // h3 {
+      //   position: absolute;
+      //   top: 50%;
+      //   left: 50%;
+      //   transform: translate(-50%, -50%);
+      //   font-size: medium;
+      // }
+      .item {
+        padding: 10px 5px;
+      }
+      .total {
+        left: 2.5%;
+        right: 2.5%;
+      }
     }
   }
 }
